@@ -16,11 +16,11 @@ export default function BasicDatePicker() {
       <div className="dates">
         <LocalizationProvider dateAdapter={AdapterMoment}>
           <DatePicker
-            label="Controlled picker"
+            label="Date picker"
             value={selectedDate}
             format="DD MMMM YYYY"
             onChange={(date) => {
-              setSelectedDate(date); // Update the selected date in the state
+              setSelectedDate(date); // Updating the selected date in the state
               console.log("Selected Date:", date.format("DD MMMM YYYY"));
             }}
           />
